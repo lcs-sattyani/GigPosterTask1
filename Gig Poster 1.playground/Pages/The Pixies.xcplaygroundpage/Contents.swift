@@ -29,6 +29,16 @@ let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
 // Begin your solution here...
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
+
+canvas.drawShapesWithBorders = false
+canvas.drawShapesWithFill = true
+canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 400)
+
 
 
 /*:
