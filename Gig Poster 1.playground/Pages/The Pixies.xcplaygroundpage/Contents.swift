@@ -28,19 +28,28 @@ let canvas = Canvas(width: 400, height: 600)
 let offWhite = Color(hue: 81, saturation: 5, brightness: 88, alpha: 100)
 let limeGreen = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
 
-// Begin your solution here...
+// Green
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.fillColor = Color(hue: 106, saturation: 64, brightness: 73, alpha: 100)
+canvas.fillColor = limeGreen
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 600)
 
+// Black
 canvas.drawShapesWithBorders = false
 canvas.drawShapesWithFill = true
-canvas.fillColor = Color(hue: 0, saturation: 0, brightness: 0, alpha: 100)
+canvas.fillColor = Color.black
 canvas.drawRectangle(at: Point(x:0, y:0), width: 400, height: 400)
 
+// Draw a line of circles at the bottom of the canvas
+canvas.fillColor = limeGreen
+for x in stride(from: 0, through: 400, by: 40) {
+    for y in stride(from: 0, through: 400, by: 40) {
+       
+        canvas.drawEllipse(at: Point(x: x, y: y), width: 35, height: 35)
+        
 
-
+    }
+}
 /*:
  ## Use Source Control
  
